@@ -4,28 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabs App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section>
+    <section class="section">
       <div class="title">
-        <h1>About</h1>
+        <h2>About</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
       <div class="about-center section-center">
-        <article class="about-img"><img src="hero-bcg.jpeg" alt="" /></article>
-        <article>
-          <div class="about">
-            <div class="btn-container">
-              <button class="tab-btn active" data-id="history">history</button>
-              <button class="tab-btn" data-id="vision">vision</button>
-              <button class="tab-btn" data-id="goals">goals</button>
-            </div>
+        <article class="about-img">
+          <img src="images/hero-bcg.jpeg" alt="image" />
+        </article>
+
+        <article class="about">
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">history</button>
+            <button class="tab-btn" data-id="vision">vision</button>
+            <button class="tab-btn" data-id="goal">goal</button>
           </div>
+          <article class="about-content">
+            <div class="content active" id="history">
+              <h4>history</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                iure atque facilis obcaecati eum dignissimos reprehenderit amet
+                consequuntur eveniet vero.
+              </p>
+            </div>
+
+            <div class="content" id="vision">
+              <h4>vision</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                exercitationem aut obcaecati porro blanditiis earum?
+                Exercitationem, sed minus.
+              </p>
+            </div>
+
+            <div class="content" id="goal">
+              <h4>goal</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                eaque dignissimos aperiam dolor animi veritatis.
+              </p>
+            </div>
+          </article>
         </article>
       </div>
     </section>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
